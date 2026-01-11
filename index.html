@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>India Image Map</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: lightskyblue; 
+            color: white;        
+        }
+    </style>
+
+    <script>
+        function showInfo(state) {
+            alert(state);
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>India Map – Clickable States</h1>
+    <p>Click on a state to view related information.</p>
+
+    <!-- CENTERED IMAGE WITH IMAGE MAP -->
+    <img src="image/india.png"
+         alt="India Map"
+         usemap="#indiaMap"
+         width="600">
+
+    <!-- IMAGE MAP DEFINITION -->
+    <map name="indiaMap">
+
+        <!-- Rajasthan -->
+        <area shape="rect"
+              coords="120,200,220,320"
+              href="javascript:void(0);"
+              onclick="showInfo('Rajasthan: Largest state of India. Capital: Jaipur.')">
+
+        <!-- Maharashtra -->
+        <area shape="rect"
+              coords="200,330,320,450"
+              href="javascript:void(0);"
+              onclick="showInfo('Maharashtra: Economic hub of India. Capital: Mumbai.')">
+
+        <!-- Tamil Nadu -->
+        <area shape="rect"
+              coords="260,480,340,580"
+              href="javascript:void(0);"
+              onclick="showInfo('Tamil Nadu: Known for temples and Tamil culture. Capital: Chennai.')">
+
+        <!-- West Bengal -->
+        <area shape="rect"
+              coords="390,290,440,360"
+              href="javascript:void(0);"
+              onclick="showInfo('West Bengal: Cultural and literary center. Capital: Kolkata.')">
+
+    </map>
+
+</body>
+</html>
