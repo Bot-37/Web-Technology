@@ -13,7 +13,7 @@
         body {
             text-align: center;
             font-family: Arial, sans-serif;
-            background-color: #eef5fb; /* full-page background */
+            background-color: skyblue; /* full-page background */
             color: #000000;           /* readable text */
         }
     </style>
@@ -27,41 +27,30 @@
 
 <body>
 
-    <h1>India Map – Clickable States</h1>
+    <h1>India Map</h1>
     <p>Click on a state to view related information.</p>
 
     <!-- CENTERED IMAGE WITH IMAGE MAP -->
-    <img src="image/india.png"
+    <img src="image/india-bg.png"
          alt="India Map"
          usemap="#indiaMap"
-         width="600">
+         height="80%"
+         width="auto">
 
     <!-- IMAGE MAP DEFINITION -->
     <map name="indiaMap">
 
+        <!-- Tamil Nadu -->
+        <area shape="poly" coords="132,455,195,423,187,478,142,513" href="javascript:void(0);" onclick="showInfo('Tamil Nadu: Known for temples and Tamil culture. Capital: Chennai.')">
+
         <!-- Rajasthan -->
-        <area shape="rect"
-              coords="120,200,220,320"
-              href="javascript:void(0);"
-              onclick="showInfo('Rajasthan: Largest state of India. Capital: Jaipur.')">
+        <area shape="rect" coords="164,188,102,248" alt="Ractangle" href="javascript:void(0);" onclick="showInfo('Rajasthan: Largest state of India. Capital: Jaipur.')">
 
         <!-- Maharashtra -->
-        <area shape="rect"
-              coords="200,330,320,450"
-              href="javascript:void(0);"
-              onclick="showInfo('Maharashtra: Economic hub of India. Capital: Mumbai.')">
+        <area shape="poly" coords="68,300,195,279,87,382,172,313,207,320" href="javascript:void(0);" onclick="showInfo('Maharashtra: Economic hub of India. Capital: Mumbai.')">
 
-        <!-- Tamil Nadu -->
-        <area shape="rect"
-              coords="260,480,340,580"
-              href="javascript:void(0);"
-              onclick="showInfo('Tamil Nadu: Known for temples and Tamil culture. Capital: Chennai.')">
-
-        <!-- West Bengal -->
-        <area shape="rect"
-              coords="390,290,440,360"
-              href="javascript:void(0);"
-              onclick="showInfo('West Bengal: Cultural and literary center. Capital: Kolkata.')">
+        <!-- Andra Pradesh -->
+        <area shape="poly" coords="162,320,144,400,190,423,254,339" href="javascript:void(0);" onclick="showInfo('Andhra Pradesh: Coastal state known for ports and agriculture. Capital: Amaravati.')">
 
     </map>
 
